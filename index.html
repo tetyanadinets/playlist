@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home task</title>
+	<style>
+		.fine-list{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		;(function(){
+			"use strict";
+			var playList = [
+				 {
+				 author: "LED ZEPPELIN",
+				 song:"STAIRWAY TO HEAVEN"
+				 },
+				 {
+				 author: "QUEEN",
+				 song:"BOHEMIAN RHAPSODY"
+				 },
+				 {
+				 author: "LYNYRD SKYNYRD",
+				 song:"FREE BIRD"
+				 },
+				 {
+				 author: "DEEP PURPLE",
+				 song:"SMOKE ON THE WATER"
+				 },
+				 {
+				 author: "JIMI HENDRIX",
+				 song:"ALL ALONG THE WATCHTOWER"
+				 },
+				 {
+				 author: "AC/DC",
+				 song:"BACK IN BLACK"
+				 },
+				 {
+				 author: "QUEEN",
+				 song:"WE WILL ROCK YOU"
+				 },
+				 {
+				 author: "METALLICA",
+				 song:"ENTER SANDMAN"
+				 }
+				];
+
+				function printPlaylist(list) {
+					var listStr = '<ol class="fine-list">';
+					for(var key = 0; key < list.length; key++){
+
+						listStr += '<li>' + list[key].author + '</li>';
+						// document.write((key+1)+ ". "+ list[key].author + "\ " + list[key].song + '<br>');
+					}
+
+					listStr += '</ol>';
+					document.write( listStr );
+				}
+
+			printPlaylist(playList);
+		})()
+	</script>
+
+</body>
+</html>
